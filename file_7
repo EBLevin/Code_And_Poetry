@@ -1,0 +1,322 @@
+#Code_And_Poetry
+## Github Lab
+
+
+Model of document revising/sharing
+    
+**First Model**    
+
+- send three copies to three people, they send three different
+- copies back, uh-oh    
+
+
+- other option is to pretend to have only one copy, send it to each of the three people one by one in a circuit and back    
+
+**Version Control**
+The problem of multiplicity of version    
+
+- **GIT**
+- on top of the actual work you do you are also going to keep a diary or ledger saying exactly what I did that day
+- ACTION: edit a class of my environment RESULT: class is edited GIT tracks that I edited it
+
+files live in folders
+
+- view folder as a vector --> FILE SYSTEM
+- imagine that every time I touch something GIT tracks a sequential number of edits
+- FILE SYSTEM vs STAGING vs journal
+
+"I am combining these groups of changes v1 through vn (not necessarily all in between) from the file-system level into just item v1 in the staging level and then again as v1 into the journal level"    
+
+
+git init (file-system)
+
+- creates the above defined structure
+- keeps track of the file-system    
+
+`git add` (staging level)    
+
+`git commit` (journal level)    
+
+`git pull` (last command)    
+
+
+the three-stage agove structure is local, there is also a remote server storing the journal level information
+
+If you try to commit to a aversion that has been passed up by another user of your github then it will let you know 
+
+lab notes are due in a github repository
+
+————————————————
+# Code and Poetry 
+## November 10, 2014 11:50 AM
+
+# Versioning
+
+
+
+He talks about the life-cycle of a text and draws convoluted directed cyclical diagram about fully embellished versioning of a text    
+
+##### 3 Case Studies
+
+###### Case Study 1: The Problem of Duplication
+
+genetic criticism - trying to reconstruct how a text was made
+
+- bible is classic example
+- many direct contradictions
+- reconstructed through such genetic criticism
+
+Duplication is big business and it's an unsolved problem for publishers and start-ups
+
+?? control of vectors is called censorship
+
+To what extent is it allowed to print off a pdf and share it with your friend?
+
+when you send something my email, the pipeline through which you send it, the vector, should it open it up and see what's inside to check for copyright infringement, and if it does it gets closed. it gets bounced by random house or others.    
+
+**Packet Sniffing Servers**
+
+- security
+- rights protections
+- censorship
+
+Talks about concordance == old fashion word for semantic web
+
+- rap genius --> all types of genius
+
+##### Case Study 2: Annotation    
+
+- decentralized annotation
+- instead of forcing people to read in a particular way
+
+single document model
+
+visibility of labor and version control
+
+need to install something
+
+———————————
+REFERENCE THIS SECTION
+
+Last login: Tue Nov 11 18:49:38 on ttys000
+dyn-160-39-139-240:~ elevin321$ pwd
+/Users/elevin321
+dyn-160-39-139-240:~ elevin321$ cd Documents
+dyn-160-39-139-240:Documents elevin321$ mkdir test_git
+dyn-160-39-139-240:Documents elevin321$ cd test_git/
+dyn-160-39-139-240:test_git elevin321$ git init
+Initialized empty Git repository in /Users/elevin321/Documents/test_git/.git/
+dyn-160-39-139-240:test_git elevin321$ ls
+dyn-160-39-139-240:test_git elevin321$ ls -a
+.	..	.git
+dyn-160-39-139-240:test_git elevin321$ git status
+# On branch master
+#
+# Initial commit
+#
+nothing to commit (create/copy files and use "git add" to track)
+dyn-160-39-139-240:test_git elevin321$ touch temp-file.txt
+dyn-160-39-139-240:test_git elevin321$ git status
+# On branch master
+#
+# Initial commit
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	temp-file.txt
+nothing added to commit but untracked files present (use "git add" to track)
+dyn-160-39-139-240:test_git elevin321$ ls
+temp-file.txt
+dyn-160-39-139-240:test_git elevin321$ git add temp-file.txt 
+dyn-160-39-139-240:test_git elevin321$ git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#	new file:   temp-file.txt
+#
+dyn-160-39-139-240:test_git elevin321$ touch temp-file_2.txt
+dyn-160-39-139-240:test_git elevin321$ touch temp-file_3.txt
+dyn-160-39-139-240:test_git elevin321$ git add temp-file_3.txt 
+dyn-160-39-139-240:test_git elevin321$ git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#	new file:   temp-file.txt
+#	new file:   temp-file_3.txt
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	temp-file_2.txt
+dyn-160-39-139-240:test_git elevin321$ echo every thing in the journal has to be accompanied by the notes
+every thing in the journal has to be accompanied by the notes
+dyn-160-39-139-240:test_git elevin321$ echo this means put your notes in line with the command
+this means put your notes in line with the command
+dyn-160-39-139-240:test_git elevin321$ ls
+temp-file.txt	temp-file_2.txt	temp-file_3.txt
+dyn-160-39-139-240:test_git elevin321$ git commit -m "Today I added temp-file.txt and temp-file_3.txt to my repo"
+[master (root-commit) ef10dfe] Today I added temp-file.txt and temp-file_3.txt to my repo
+ Committer: Eli Levin <elevin321@dyn-160-39-139-240.dyn.columbia.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 temp-file.txt
+ create mode 100644 temp-file_3.txt
+dyn-160-39-139-240:test_git elevin321$ git status
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	temp-file_2.txt
+nothing added to commit but untracked files present (use "git add" to track)
+dyn-160-39-139-240:test_git elevin321$ git add temp-file_2.txt 
+dyn-160-39-139-240:test_git elevin321$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   temp-file_2.txt
+#
+dyn-160-39-139-240:test_git elevin321$ nano temp-file_2.txt 
+dyn-160-39-139-240:test_git elevin321$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   temp-file_2.txt
+#
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   temp-file_2.txt
+#
+dyn-160-39-139-240:test_git elevin321$ git remote add origin https://github.com/elevin321/Code_And_Poetry.git
+dyn-160-39-139-240:test_git elevin321$ git push -u origin master
+Username for 'https://github.com': elevin321
+Password for 'https://elevin321@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 271 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/elevin321/Code_And_Poetry.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+dyn-160-39-139-240:test_git elevin321$ echo if I wanted to remove a .git directory then you do `rm -rf .git/
+> 
+> done
+> 
+dyn-160-39-139-240:test_git elevin321$ /
+-bash: /: is a directory
+dyn-160-39-139-240:test_git elevin321$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   temp-file_2.txt
+#
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   temp-file_2.txt
+#
+dyn-160-39-139-240:test_git elevin321$ nano temp-file_2.txt 
+dyn-160-39-139-240:test_git elevin321$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   temp-file_2.txt
+#
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   temp-file_2.txt
+#
+dyn-160-39-139-240:test_git elevin321$ git add temp-file_2.txt 
+dyn-160-39-139-240:test_git elevin321$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   temp-file_2.txt
+#
+dyn-160-39-139-240:test_git elevin321$ git commit
+[master 57e004c]  edited my second temp file (Temp-file_2.txt) a couple times and then added and committed
+ Committer: Eli Levin <elevin321@dyn-160-39-139-240.dyn.columbia.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+)
+ create mode 100644 temp-file_2.txt
+dyn-160-39-139-240:test_git elevin321$ git checkout temp-file_2.txt
+dyn-160-39-139-240:test_git elevin321$ ls
+temp-file.txt	temp-file_2.txt	temp-file_3.txt
+dyn-160-39-139-240:test_git elevin321$ cat temp-file_2.txt 
+hello world
+new stuff here
+hello hello
+dyn-160-39-139-240:test_git elevin321$ git status
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+nothing to commit, working directory clean
+dyn-160-39-139-240:test_git elevin321$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 4, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 380 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/elevin321/Code_And_Poetry.git
+   ef10dfe..57e004c  master -> master
+dyn-160-39-139-240:test_git elevin321$ git status
+# On branch master
+nothing to commit, working directory clean
+dyn-160-39-139-240:test_git elevin321$ 
+
+
+

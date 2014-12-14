@@ -1,0 +1,145 @@
+unix
+- free bad
+- linux
+-both have 'grep' but slight difference
+
+make test dir
+- touch a few files
+- - apples.txt
+- - oranges.txt
+- - bananas.md
+
+
+to find stuff we're using 
+
+```
+using find . -name "*.txt"
+
+or
+
+find . -name "ora*.txt"
+
+
+```
+
+works similar to spotlight
+- accepts full regular expressions    
+- but dot covers 90% of your queries
+- depends on where you initiate query    
+
+control c stops query    
+
+we went to project gutenberg and `wget`ed Moby dick into our test (test-x) directory    
+
+`curl` and `wget` are similar    
+
+going to `grep` moby dick    
+
+
+`
+dyn-160-39-139-199:test-x elevin321$ grep "Moby Dick" pg2701.txt
+`
+
+`grep` is defined a print lines matching a pattern    
+- full text search    
+
+
+grep from the basis of the entire directory will search them all
+- specify target after specifying object of search (in our case we use orange)
+
+meant to make a directory within our test directory and put the orange there
+- because this way `grep` would not have found our secret orange
+- this was for the purpose of showing how to using `-r` with `grep` to illustrate recursive search of grep through all directories sub the current directories
+
+`wc` 
+- characters or bytes
+- lines, words, characters
+
+
+covered so far
+- `find`
+- `grep`
+- `wc`
+- `sort`
+- - can define sorting method    
+
+
+`sort orange | uniq -c`
+
+
+at the bottom of it it's still physicality
+
+`sort`
+
+and
+
+`uniq` with `-c` flag
+- with `-c` we get the counts as well
+
+we're gonna learn another cool thing called `see`
+
+- what if we want to substitute oranges for bananas?
+- `dyn-160-39-139-199:test-x elevin321$ sed 's/day/night/' 24hr.txt`
+- took all of our days and turned them into nights
+- does not actually change in file
+- use `-i` read as "in place" 
+- this would not work in place
+- figure it out mac people, why isn't this working
+
+`-i` is dangerous
+
+
+`gnu utils` are baked into every operating system
+
+"core utils"
+
+still trying to figure out sed
+
+asked us to replace all instances of whale with pumpkin
+
+
+first
+- analyze the treatment of gender in moby dick
+- - look for words that have to do with male/female however
+
+first
+- create a new project directory
+- grab the text of moby dick 
+
+make a file for male (called male perhaps) (do same for female)
+- words having to do with male
+
+
+use grep the context of all the female words (and male words) 
+and create two new files with just the instances/context of male and then separately female words
+
+get rid of "the" and common words
+
+
+at the end, we will just have uncommon or significant words in relation to the male or female words
+
+make 2 moby dicks one with female/male words and get rid of "the" and "and" just leaving words with meat, and meaning
+
+you're just gonna have a list of words that occur very common with male or female
+
+
+
+second challenge
+- weasel words
+
+take a piece of writing that I wrote 
+
+create a project directory
+- copy 3 files (term papers) convert to text
+
+make a list of files that are weasel words "clearly" "obviously"
+- make a list of weasel words
+
+make a script that replaces these words with other words
+-just a few weasel words
+
+`grep"pumpkin" new-moby.txt > newer-moby.txt`
+
+sed can take a file as an attribute
+- also grep -- maybe only grep `-f`
+- this way we can submit a file of weasel words instead of just giving one file at a time

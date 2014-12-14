@@ -1,0 +1,176 @@
+#Code and Poetry
+
+search | friends | network
+------ | ------- | -------
+locate |         |  wget
+find   | head    | curl
+grep   | tail    | SSH
+awk    | cat     | ping
+       |         | traceroute
+       | *flow*  |
+ ----- | ------- | --------
+       | >>      |
+       | xargs   |
+ 
+ 
+ trying to utilize aspects of markdown
+ 
+ ```
+ pandoc -o testing.pdf test.md
+ ```
+ 
+ 
+ `pandoc -o`  
+ 
+ * says guess the file type
+ 
+ 
+`locate`    
+
+* just finds files
+
+
+```
+sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
+```
+
+used the above to get mac ability of locate
+
+
+
+`dyn-160-39-138-56:temp elevin321$ rm -ri test*`
+
+* performed recursive pwd
+
+
+
+
+# note bene
+history >> vim (or other editor0
+
+———————\
+Code and Poetry
+
+#######Medium Mode Message
+
+Violin
+
+Medium    
+- wood, air, metal
+
+Mode    
+- music (atunement?)
+
+Message    
+- 3rd Symphony
+
+
+Violin (but playing morse code to transmit secret message)
+
+Medium    
+- the where
+- same
+
+Mode    
+- the how
+- morse
+
+Message    
+- the what
+- secret message
+
+
+Violin recording on tape
+
+Medium    
+- added layer of tape + same as before
+
+Mode    
+- music again
+
+Message    
+- Bach's 3rd symphony
+
+
+######Garageband
+
+Medium    
+- magnetic
+- wood, metal, etc
+
+Mode    
+- Digitallly
+- music
+
+Message    
+- bach's 3rd symphony
+
+###MULTIMODALITY
+* violin was semi modal but your are not going to produce videos from a violin
+* all of a sudden a violin is a multi-modal device by the advent of digitalization
+
+
+#digitality
+*granular discrete - essence of digitality
+
+
+
+
+
+#Digital
+*word cloud
+
+- discrete (i.e. not continuous)
+- code/decode
+
+* a bit is like a gate and it's either open or closed, 1 or 0
+* early computers had like almost visible gates to complete (or not) the circuit
+* 8 bits is a byte
+*     - minimum required to complete the alphabet - 255 core characters
+* computers, down to the core, have text built in
+
+
+
+
+
+ookskool (macedonian?)
+invented semiotics of insect    
+- each being invents it's own sense of time and space    
+- animal phenomenology    
+- What does time mean to a tick
+- the only thing it feels is the smell of blood and a particular warmth    
+
+
+I life continuous or discrete
+- haugeland says analog is impossible to define but here are some tools to help
+
+language alphabets and musical notation
+- ALL DIGITAL
+
+rethink that idea of digital
+
+
+#Slow Reading Time
+
+
+##### Analog and Analog
+John Haugeland    
+
+Something that matters to humans cannot be abstracted - forgeries, even perfect ones, are unacceptable    
+
+Only a Rembrandt is a Rembrandt    
+
+The metaphysical anxiety of the digital is if our lives are deterministic
+- religion is one thing that says there is a divine spark blah blah (counterpoint to kant for secularism)
+
+- flawless copying?
+- medium independence
+- 
+
+
+
+Most new tv's have  new technology called intellimotion
+- film is @ 20 frames per second
+- tv is anywhere from 25-60 frames per second
+- film is a much more discrete medium in this sense
+- so the smart tv's do, is counting on the idea of frames are good, they will compute halfway between one frame and the next

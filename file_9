@@ -1,0 +1,115 @@
+Code_and_Poetry
+
+Get out of local machine and into server
+
+SERVER HERDSMAN - system administrator
+
+- second class citizen
+- second fiddle to programmer
+- - paid less
+- - less prestigious
+
+modern day move from managing servers to treating servers like software
+
+server is an abstraction - it is in the cloud
+
+going to spin up a server today
+
+as far as sys admins are concerned the server farm is an abstraction, a series of instructions
+
+"cloud orchestration" 
+
+- instead of a server at a time you can spin up 100 or 1000 servers with and given characteristics and behaviors
+
+system administrator is a developer in his or her own right
+
+- no longer looked down upon
+
+
+today we are each going to get a little cloud space
+
+- a touch of cloud computing
+
+
+ADMINISTRATION OF THIS COURSE (ALL DUE DECEMBER 13TH)
+
+- weasel words
+- lab notebooks
+- FINAL, THE MINIMUM VIABLE TUTORIAL
+- - don't spend that much time
+- - partly just to practice github operations
+- - take a lab notebook, clean it up, and submit to group
+- - - imagine audience is somebody else, at various levels of technological sophistication (high level of cleanup)
+
+
+by monday able to log into this machine, which is a pure command line environment    
+try to understand the general theory    
+
+a server is always on and it's always listening - call it bob    
+bob can serve multiple people at one time, literally serves packages of data    
+streaming music, instead of buying the music we don't all need to have lady gaga's album, perhaps just one centralized package in bob's basket and have him throw it to you whenever you ask    
+
+evolution of servers, first had basic terminals, then revolution of personal computer (pc) we can do it at home, now we're moving back to the centralized storage of info and satellite computers just to request access from the servers
+
+a server is just a beefier computer that's always plugged in that is listening for requests, on your client, who's requesting is Firefox (or similar)
+
+we are going to create a virtual server in the cloud    
+
+
+5 minute crash course on the cloud    
+platform as a service
+        
+- we use AWS amazon web service (also have microsoft and google options)
+- has to have some processing power
+- can call for machines with specific power output (processing)
+
+that server that we will provision is an abstract idea
+
+amazon will automatically adjust the size of traffic and then resizes back down to minimum size
+
+ports going in and ports coming out    
+
+hard drive is an option
+
+- S3
+- elastic BS
+- glacier
+- - inefficient but good for backups
+
+cloud computing is trying to virtualize software    
+when we log into this cloud server it will be like logging into any other regular server    
+
+
+how comfortable are we with a private company running our public information    
+
+we're gonna make it in a modular way that allows us to sell it to other companies
+
+logging into AWS    
+
+EC2 virtual servers in the cloud
+
+when you provision services in the cloud you do it by regions    
+
+little components need to be in same region
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

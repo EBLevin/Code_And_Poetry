@@ -1,0 +1,224 @@
+# Code_and_Poetry
+## Wednesday, November 19
+
+github branching
+
+benefit of long-term perseverance for github branching
+
+protracted explanation of github branching and merging procedures
+
+for each one of us
+
+1. open a new repository called lab notes
+2. go ahead and put your lab notes folder under version control - that is, push it to github
+
+    - separate folders into nicely discretized files
+    - strongly suggest that you use command line git
+    
+    
+git config --global core.editor emacs    
+
+run the above command so we don't get lost (use nano in place of emacs above)
+
+————————————
+REFERENCE THIS SECTION
+
+#
+# Initial commit
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	temp-file.txt
+nothing added to commit but untracked files present (use "git add" to track)
+dyn-160-39-139-240:test_git elevin321$ ls
+temp-file.txt
+dyn-160-39-139-240:test_git elevin321$ git add temp-file.txt 
+dyn-160-39-139-240:test_git elevin321$ git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#	new file:   temp-file.txt
+#
+dyn-160-39-139-240:test_git elevin321$ touch temp-file_2.txt
+dyn-160-39-139-240:test_git elevin321$ touch temp-file_3.txt
+dyn-160-39-139-240:test_git elevin321$ git add temp-file_3.txt 
+dyn-160-39-139-240:test_git elevin321$ git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#	new file:   temp-file.txt
+#	new file:   temp-file_3.txt
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	temp-file_2.txt
+dyn-160-39-139-240:test_git elevin321$ echo every thing in the journal has to be accompanied by the notes
+every thing in the journal has to be accompanied by the notes
+dyn-160-39-139-240:test_git elevin321$ echo this means put your notes in line with the command
+this means put your notes in line with the command
+dyn-160-39-139-240:test_git elevin321$ ls
+temp-file.txt	temp-file_2.txt	temp-file_3.txt
+dyn-160-39-139-240:test_git elevin321$ git commit -m "Today I added temp-file.txt and temp-file_3.txt to my repo"
+[master (root-commit) ef10dfe] Today I added temp-file.txt and temp-file_3.txt to my repo
+ Committer: Eli Levin <elevin321@dyn-160-39-139-240.dyn.columbia.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 temp-file.txt
+ create mode 100644 temp-file_3.txt
+dyn-160-39-139-240:test_git elevin321$ git status
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	temp-file_2.txt
+nothing added to commit but untracked files present (use "git add" to track)
+dyn-160-39-139-240:test_git elevin321$ git add temp-file_2.txt 
+dyn-160-39-139-240:test_git elevin321$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   temp-file_2.txt
+#
+dyn-160-39-139-240:test_git elevin321$ nano temp-file_2.txt 
+dyn-160-39-139-240:test_git elevin321$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   temp-file_2.txt
+#
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   temp-file_2.txt
+#
+dyn-160-39-139-240:test_git elevin321$ git remote add origin https://github.com/elevin321/Code_And_Poetry.git
+dyn-160-39-139-240:test_git elevin321$ git push -u origin master
+Username for 'https://github.com': elevin321
+Password for 'https://elevin321@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 271 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/elevin321/Code_And_Poetry.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+dyn-160-39-139-240:test_git elevin321$ echo if I wanted to remove a .git directory then you do `rm -rf .git/
+> 
+> done
+> 
+dyn-160-39-139-240:test_git elevin321$ /
+-bash: /: is a directory
+dyn-160-39-139-240:test_git elevin321$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   temp-file_2.txt
+#
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   temp-file_2.txt
+#
+dyn-160-39-139-240:test_git elevin321$ nano temp-file_2.txt 
+dyn-160-39-139-240:test_git elevin321$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   temp-file_2.txt
+#
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   temp-file_2.txt
+#
+dyn-160-39-139-240:test_git elevin321$ git add temp-file_2.txt 
+dyn-160-39-139-240:test_git elevin321$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   temp-file_2.txt
+#
+dyn-160-39-139-240:test_git elevin321$ git commit
+[master 57e004c]  edited my second temp file (Temp-file_2.txt) a couple times and then added and committed
+ Committer: Eli Levin <elevin321@dyn-160-39-139-240.dyn.columbia.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+)
+ create mode 100644 temp-file_2.txt
+dyn-160-39-139-240:test_git elevin321$ git checkout temp-file_2.txt
+dyn-160-39-139-240:test_git elevin321$ ls
+temp-file.txt	temp-file_2.txt	temp-file_3.txt
+dyn-160-39-139-240:test_git elevin321$ cat temp-file_2.txt 
+hello world
+new stuff here
+hello hello
+dyn-160-39-139-240:test_git elevin321$ git status
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+nothing to commit, working directory clean
+dyn-160-39-139-240:test_git elevin321$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 4, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 380 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/elevin321/Code_And_Poetry.git
+   ef10dfe..57e004c  master -> master
+dyn-160-39-139-240:test_git elevin321$ git status
+# On branch master
+nothing to commit, working directory clean
+dyn-160-39-139-240:test_git elevin321$ 

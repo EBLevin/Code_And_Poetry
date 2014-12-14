@@ -1,0 +1,269 @@
+ 
+Code And Poetry
+
+Need to be able to navigate fluently through a network
+
+would like to talk about version control
+collaboration online
+github
+
+
+
+```
+grep -v -f human_animal_overlap.txt new_animal_token.txt
+ 
+523  
+
+grep -v -f human_animal_overlap.txt new_animal_token.txt > only_animal_words.txt
+```
+
+```
+grep -f new_animal_token.txt new_human_token.txt > human_animal_overlap.txt
+
+```
+
+```
+507  
+sort animal_token.txt | uniq -u > new_animal_token.txt
+```
+
+```
+ 481  sed -e 's/ /\'$'\n/g' animal_output.txt > animal_token.txt
+ ```
+ 
+ 
+ ```
+   424  grep -wf animal_words pg2701.txt >> animal_output.txt
+```
+
+```
+  420  grep -f human_words pg2701.txt >> human_output.txt
+  ```
+————————————  
+
+Code And Poetry 
+
+Humanism vs post humanism
+
+Monism
+
+pre-modern monism
+
+collective action
+
+- capitalism
+- - we as free agents pursue our self interests and in the pursuit of self interest we act rhizomatically in random ways
+- - - the idea is that this system, this rhizome, will somehow produce the golden outcome -- to Prof this is a monistic system
+
+monism, at the bottom, reduces human natures
+
+in a free world you can act, despite prevention
+
+SYSTEM
+
+there is a tiny part of you that is outside the system
+
+a type of monism
+
+- everything is perceived of contrived structures built on the basis of information
+
+
+singularity is a certain type of monism
+
+how do you articulate shared goals in such a way as to facilitate or abide by a system of collective action
+
+- you get a job, your job now dictates your goals
+
+peer production model
+
+programmatic thinking
+
+agency, free will, articulation of goals
+
+
+oceans
+
+
+—————————————————
+REFERENCE SECTION BELOW
+381  man grep
+  382  grep -f human_words pg2701.txt 
+  383  grep -f human_words pg2701.txt 
+  384  man tokenize
+  385  tokenize
+  386  grep -w --file=human_words pg2701.txt >> human_output.txt
+  387  cat human_output.txt 
+  388  grep "engineer" pg2701.txt 
+  389  ls
+  390  touch temp_words
+  391  echo "engineer" > temp_words 
+  392  cat temp_words 
+  393  grep -w --file=temp_words pg2701.txt
+  394  man grep
+  395  nano temp_words 
+  396  grep -w --file=temp_words pg2701.txt
+  397  nano temp_words 
+  398  grep -w --file=temp_words pg2701.txt
+  399  grep --file=human.txt pg2701.txt 
+  400  grep --file=human_words pg2701.txt 
+  401  grep "man" pg2701.txt 
+  402  ls
+  403  mkdir trash
+  404  mv human_output.txt trash
+  405  ls
+  406  cd trash
+  407  ls
+  408  cd ..
+  409  ls
+  410  man grep
+  411  nano human_words 
+  412  grep -w --file=human_words pg2701.txt 
+  413  pwd
+  414  ls
+  415  grep -w --file=human_words pg2701.txt >> human_output.txt
+  416  ls
+  417  nano animal_words 
+  418  nano animal_words 
+  419  mv human_output.txt trash
+  420  grep -f human_words pg2701.txt >> human_output.txt
+  421  cat human_output.txt 
+  422  grep -wf human_words pg2701.txt > human_output.txt 
+  423  cat human_output.txt 
+  424  grep -wf animal_words pg2701.txt >> animal_output.txt
+  425  cat animal_output.txt 
+  426  man split
+  427  man word
+  428  man $word
+  429  sd
+  430  man awk
+  431  man sed
+  432  sed '\s/\s/\n/g' human_output.txt >> human_token.txt
+  433  sed '\s/\s/\n/g' human_output.txt >> human_token.txt 
+  434  man sed
+  435  sed 's/,/\
+  436  sed 's/,/\
+  437  ls
+  438  pwd
+  439  cd Documents
+  440  cd huntingthewhale/
+  441  ls
+  442  sed -e 's/ /\'$'\n/g' human_output.txt > human_token.txt 
+  443  cat human_token.txt 
+  444  sed -e 's/ /\'$'\n/g' animal_output.txt > animal_token.txt
+  445  cat animal_token.txt 
+  446  man awk
+  447  man sort
+  448  pwd
+  449  cd Documents/huntingthewhale/
+  450  man uniq
+  451  pwd
+  452  ls
+  453  uniq -c human_token.txt
+  454  uniq human_token.txt 
+  455  man join
+  456  man vms
+  457  man VMS
+  458  cd Documents/huntingthewhale/
+  459  ls
+  460  cat animal_token.txt 
+  461  uniq -c animal_token.txt 
+  462  sort animal_token.txt  | uniq -c | sort -nr
+  463  ls
+  464  cat animal_token.txt > new_animal_token.txt
+  465  cat new_animal_token.txt 
+  466  uniq -c new_animal_token.txt 
+  467  uniq new_animal_token.txt 
+  468  uniq -c animal_token.txt 
+  469  pwd
+  470  ls
+  471  animal_t
+  472  pwd
+  473  cd Documents/huntingthewhale/
+  474  cat animal_token.txt 
+  475  man join
+  476  sort animal_token.txt | uniq -u
+  477  cat animal_token.txt 
+  478  sort animal_token.txt | uniq -u > animal_token.txt 
+  479  cat animal_token.txt 
+  480  history
+  481  sed -e 's/ /\'$'\n/g' animal_output.txt > animal_token.txt
+  482  cat animal_token.txt 
+  483  ls
+  484  man mv
+  485  mv new_animal_token.txt trash/
+  486  cd trash
+  487  ls
+  488  cd ..
+  489  pwd
+  490  ls
+  491  sort human_token.txt | uniq -u
+  492  sort human_token.txt | uniq -u | new_human_token.txt
+  493  sort human_token.txt | uniq -u > tester.txt
+  494  cat tester.txt 
+  495  cat tester.txt > new_human_token.txt
+  496  cat new_human_token.txt 
+  497  history
+  498  ls
+  499  cd Documents/huntingthewhale/
+  500  ls
+  501  human_token.txt
+  502  cat human_token.txt
+  503  history
+  504  ls
+  505  mv tester.txt trash
+  506  ls
+  507  sort animal_token.txt | uniq -u > new_animal_token.txt
+  508  cat new_animal_token.txt 
+  509  man grep
+  510  man grep
+  511  grep -f new_animal_token.txt new_human_token.txt 
+  512  man grep
+  513  tail new_human_token.txt 
+  514  tail new_animal_token.txt 
+  515  history
+  516  grep -f new_animal_token.txt new_human_token.txt > human_animal_overlap.txt
+  517  cat human_animal_overlap.txt 
+  518  grep -v -f new_human_token.txt human_animal_overlap.txt 
+  519  grep -v -f human_animal_overlap.txt new_human_token.txt 
+  520  grep -v -f human_animal_overlap.txt new_human_token.txt > only_human_words.txt
+  521  cat only_human_words.txt 
+  522  grep -v -f human_animal_overlap.txt new_animal_token.txt 
+  523  grep -v -f human_animal_overlap.txt new_animal_token.txt > only_animal_words.txt
+  524  vim only_animal_words.txt 
+  525  cd ~
+  526  pwd
+  527  ls
+  528  man pandoc
+  529  pwd
+  530  cd Documents/huntingthewhale/
+  531  ls
+  532  pandoc -f txt -t pdf only_human_words.txt 
+  533  pandoc -t latex -o only_human_words.pdf
+  534  ls
+  535  cat only_human_words.txt 
+  536  man pandoc
+  537  pwd
+  538  ls
+  539  pandoc only_human_words.txt -o only_human_words.pdf
+  540  man pdflatex
+  541  man latex
+  542  brew install latex
+  543  --latex-engine=/usr/texbin/pdflatex
+  544  latex -v
+  545  man grep
+  546  pandoc only_human_words.txt -o only_human_words.pdf
+  547  pdflatex -v
+  548  cd /usr/texbin
+  549  sudo ln -s pdftex pdflatex
+  550  pdflatex -v
+  551  -v pdflatex
+  552  pandoc only_human_words.txt -o only_human_words.pdf
+  553  pwd
+  554  cd ~
+  555  pwd
+  556  cd Documents/huntingthewhale/
+  557  pandoc only_human_words.txt -o only_human_words.pdf
+  558  history
+  559  history > code_and_poetry_10-22.txt
+
+

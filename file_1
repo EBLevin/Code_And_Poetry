@@ -1,0 +1,122 @@
+Code and Poetry
+
+Markdown
+
+	- human readable
+	- not proprietary
+
+single emphasis :: * :: italics :: *single*
+
+secondary (double) emphasis :: ** :: bold :: **double**
+
+heading :: # :: 
+#Heading
+
+subheading :: ## :: 
+##Subheading
+
+Sub-subheading :: ### ::
+###Sub-subheading
+
+create meaning out of text and not worry so much about markup
+
+empty space matters - markdown renderers need two spaces at the end of text
+
+
+- list
+- by making tab + space
+- will intuit next tab
+
+quote :: > at first line
+>this is definitely a quote  
+>will intuit next line - MLA standards
+
+nano test.md 
+- nano is an ancient md editor built into unix  
+
+How to make a footnote. ^[1]  
+what's this ^[2]
+
+[1]: Note1
+
+[2]: difference? not sure.
+
+
+lin to something? [link](www.google.com)
+
+this is a tick on upper left on tilda key :: `
+
+` code `
+
+```
+
+or like this
+# we would expect a heading here
+code block
+
+```
+
+pandoc is a universal renderer  
+it works in terminal
+changes anything into anything
+not for the faint of heart
+command line tool
+
+we care about md to word or pdf
+
+in a md block start with yaml  
+`yet another markup language`
+
+
+
+create logic based on arbitrary metadata from the yaml block  
+
+don't use vim necessarily, start with a more modern sleek editor
+
+
+
+    when you use more than 4 spaces it assumes code block
+
+**this is so fucking cool**
+
+
+to user pandoc
+- verb
+- adverb
+- noun
+
+###pandoc -so test.pdf test.md
+- s means smart
+- o means guess what type of file based on the extension
+- pandoc please convert pandoc.md into pandoc.pdf and use smart formatting
+
+###zathura test.pdf
+- just opens the file - viewer
+
+latech??
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+spacemaker
+
+``

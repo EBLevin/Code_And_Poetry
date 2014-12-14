@@ -1,0 +1,61 @@
+#Code and poetry
+##Terminal Work
+- review what we've learned in terminal
+- expand terminal knowledge
+
+what have we learned  
+- pwd - path to working directory  
+- ls lists the directories  
+- "tab the world"  
+- cat - list the contents of a file
+- man  
+- minus h flag  
+- mkdir - make a directory
+- touch  
+- we made a temp directory in documents  
+- we `touch`ed a new file test.txt  
+- echo  >  
+- `>` means overwrite ((dangerous))  
+- `history`  
+- pipe "|"  
+- `nano`  
+- `less` is a paginator  
+
+you pipe the output through the pipe into a page-inator  
+ `grep` is full text search
+ 
+ `^r` is reverse search  
+ 
+ 3 commands that are scary  
+ `copy`  
+ ...?  
+verb adverb noun  
+syntax always has that structure  
+
+**bold**
+
+best practice is dont use spaces in the naming of the files  
+
+dont use capitals - capitals matter
+                               
+
+`mv` 
+
+
+instead of remove `rm` just create a trash folder and move shit there  
+
+`ls -l` means list things long form
+
+dont name things duplicatively
+
+`!` dont need it > :)
+
+`-r`
+
+_flags can be chained_ 
+
+`wget` is get something online w/ pdf link
+
+
+
+
